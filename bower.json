@@ -1,0 +1,27 @@
+{
+  "name": "bread-box",
+  "version": "1.0.0",
+  "authors": [
+    "Next Century Corporation"
+  ],
+  "description": "Polymer web component that shows a breadbox with text and optional other content.",
+  "keywords": [
+    "web-component",
+    "polymer"
+  ],
+  "main": "bread-box.html",
+  "license": "http://polymer.github.io/LICENSE.txt",
+  "homepage": "https://github.com/DigElements/bread-box/",
+  "ignore": [
+    "/.*",
+    "/test/"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.2.0",
+    "paper-styles": "PolymerElements/paper-styles#^1.0.1"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "web-component-tester": "^4.0.0"
+  }
+}

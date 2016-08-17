@@ -1,0 +1,79 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../paper-styles/color.html">
+
+<!--
+Polymer web component that shows a breadbox with text and optional other content.
+
+Example:
+
+    <bread-box text="Hello World">
+      <iron-icon icon="clear"></iron-icon>
+    </bread-box>
+
+### Styling
+
+`<bread-box>` provides the following custom properties and mixins
+for styling:
+
+Custom property | Description | Default
+----------------|-------------|----------
+`--bread-box-bg-color` | Background color of a facet tag | --paper-blue-grey-200
+`--bread-box-text-color` | Text color for facets | --paper-blue-grey-800
+
+@demo demo/index.html
+-->
+
+<dom-module id="bread-box">
+  <template>
+    <style>
+      .breadbox {
+        font-size: small;
+        color: var(--bread-box-text-color, --paper-blue-grey-800);
+        background: var(--bread-box-bg-color, --paper-blue-grey-200);
+        white-space: nowrap;
+        display: inline-block;
+        padding: 1px 3px;
+        margin: 3px 1px;
+        vertical-align: middle;
+      }
+      .breadbox > span {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 250px;
+        overflow: hidden;
+      }
+    </style>
+
+    <span class="breadbox">
+      <span title$="[[text]]">
+        [[text]]
+      </span>
+      <content></content>
+    </span>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'bread-box',
+
+      properties: {
+        /**
+         * The text of the breadbox.
+         */
+        text: {
+          type: String
+        }
+      }
+    });
+  </script>
+</dom-module>
