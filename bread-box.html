@@ -37,20 +37,22 @@ Custom property | Description | Default
   <template>
     <style>
       .breadbox {
-        font-size: small;
-        color: var(--bread-box-text-color, --paper-blue-grey-800);
         background: var(--bread-box-bg-color, --paper-blue-grey-200);
-        white-space: nowrap;
+        color: var(--bread-box-text-color, --paper-blue-grey-800);
         display: inline-block;
-        padding: 1px 3px;
-        margin: 3px 1px;
-        vertical-align: middle;
+        font-size: small;
+        padding: 3px;
+        margin: 3px;
       }
+
       .breadbox > span {
-        white-space: nowrap;
-        text-overflow: ellipsis;
+        display: inline-block;
+        line-height: 18px;
         max-width: 250px;
         overflow: hidden;
+        text-overflow: ellipsis;
+        vertical-align: middle;
+        white-space: nowrap;
       }
     </style>
 
