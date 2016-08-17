@@ -12,40 +12,40 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../paper-styles/color.html">
 
 <!--
-Polymer web component that shows a breadbox with text and optional other content.
+Polymer web component that shows a breadbox item with text and optional other content.
 
 Example:
 
-    <bread-box text="Hello World">
+    <breadbox-item text="Hello World">
       <iron-icon icon="clear"></iron-icon>
-    </bread-box>
+    </breadbox-item>
 
 ### Styling
 
-`<bread-box>` provides the following custom properties and mixins
+`<breadbox-item>` provides the following custom properties and mixins
 for styling:
 
 Custom property | Description | Default
 ----------------|-------------|----------
-`--bread-box-bg-color` | Background color of a facet tag | --paper-blue-grey-200
-`--bread-box-text-color` | Text color for facets | --paper-blue-grey-800
+`--breadbox-item-bg-color` | Background color of a facet tag | --paper-blue-grey-200
+`--breadbox-item-text-color` | Text color for facets | --paper-blue-grey-800
 
 @demo demo/index.html
 -->
 
-<dom-module id="bread-box">
+<dom-module id="breadbox-item">
   <template>
     <style>
-      .breadbox {
-        background: var(--bread-box-bg-color, --paper-blue-grey-200);
-        color: var(--bread-box-text-color, --paper-blue-grey-800);
+      .item {
+        background: var(--breadbox-item-bg-color, --paper-blue-grey-200);
+        color: var(--breadbox-item-text-color, --paper-blue-grey-800);
         display: inline-block;
         font-size: small;
         padding: 3px;
         margin: 3px;
       }
 
-      .breadbox > span {
+      .item > span {
         display: inline-block;
         line-height: 18px;
         max-width: 250px;
@@ -56,7 +56,7 @@ Custom property | Description | Default
       }
     </style>
 
-    <span class="breadbox">
+    <span class="item">
       <span title$="[[text]]">
         [[text]]
       </span>
@@ -66,11 +66,11 @@ Custom property | Description | Default
 
   <script>
     Polymer({
-      is: 'bread-box',
+      is: 'breadbox-item',
 
       properties: {
         /**
-         * The text of the breadbox.
+         * The text of the breadbox item.
          */
         text: {
           type: String

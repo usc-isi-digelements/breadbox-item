@@ -1,21 +1,21 @@
-# bread-box
+# breadbox-item
 
-Polymer web component that shows a breadbox with text and optional other content.
+Polymer web component that shows a breadbox item with text and optional other content.
 
 Example:
 
-    <bread-box text="Hello World">
+    <breadbox-item text="Hello World">
       <iron-icon icon="clear"></iron-icon>
-    </bread-box>
+    </breadbox-item>
 
 ### Styling
 
-`<bread-box>` provides the following custom properties and mixins for styling:
+`<breadbox-item>` provides the following custom properties and mixins for styling:
 
 Custom property | Description | Default
 ----------------|-------------|----------
-`--bread-box-bg-color` | Background color of a facet tag | --paper-blue-grey-200
-`--bread-box-text-color` | Text color for facets | --paper-blue-grey-800
+`--breadbox-item-bg-color` | Background color of a facet tag | --paper-blue-grey-200
+`--breadbox-item-text-color` | Text color for facets | --paper-blue-grey-800
 
 ## Dependencies
 
