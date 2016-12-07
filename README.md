@@ -2,7 +2,7 @@
 
 A Polymer Element showing a 'breadbox' with text and other optional content.
 
-## Example
+### Example
 ```html
     <breadbox-item text="Hello World">
         <iron-icon icon="clear"></iron-icon>
