@@ -40,7 +40,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
       test('does have an item element', function() {
         var item = component.$$('.item');
+        var itemChildren = Polymer.dom(item).children;
         expect(item).to.exist;
+        expect(itemChildren.length).to.equal(2);
+        expect(itemChildren[0].localName).to.equal('span');
+        expect(itemChildren[0].title).to.equal(component.text);
+        expect(itemChildren[0].innerText).to.equal(component.text);
+        expect(itemChildren[1].localName).to.equal('content');
       });
     });
   </script>
