@@ -27,25 +27,25 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   <script>
     suite('breadbox-item tests', function() {
-      var component;
+      var element;
 
       setup(function() {
-        component = fixture('breadbox-item-fixture');
-        component.text = 'myText';
+        element = fixture('breadbox-item-fixture');
+        element.text = 'myText';
       });
 
       test('text is set to correct value', function() {
-        expect(component.text).to.equal('myText');
+        expect(element.text).to.equal('myText');
       });
 
       test('does have an item element', function() {
-        var item = component.$$('.item');
+        var item = element.$$('.item');
         var itemChildren = Polymer.dom(item).children;
         expect(item).to.exist;
         expect(itemChildren.length).to.equal(2);
         expect(itemChildren[0].localName).to.equal('span');
-        expect(itemChildren[0].title).to.equal(component.text);
-        expect(itemChildren[0].innerText).to.equal(component.text);
+        expect(itemChildren[0].title).to.equal(element.text);
+        expect(itemChildren[0].innerText).to.equal(element.text);
         expect(itemChildren[1].localName).to.equal('content');
       });
     });

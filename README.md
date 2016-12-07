@@ -1,12 +1,13 @@
 # breadbox-item
 
-Polymer web component that shows a breadbox item with text and optional other content.
+A Polymer Element showing a 'breadbox' with text and other optional content.
 
-Example:
-
+## Example
+```html
     <breadbox-item text="Hello World">
-      <iron-icon icon="clear"></iron-icon>
+        <iron-icon icon="clear"></iron-icon>
     </breadbox-item>
+```
 
 ### Styling
 
@@ -17,7 +18,7 @@ Custom property | Description | Default
 `--breadbox-item-bg-color` | Background color of a facet tag | --paper-blue-grey-200
 `--breadbox-item-text-color` | Text color for facets | --paper-blue-grey-800
 
-## Dependencies
+### Dependencies
 
 Dependencies are installed using [Bower](http://bower.io/):
 
