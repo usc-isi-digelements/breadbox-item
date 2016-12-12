@@ -4,9 +4,9 @@ A Polymer Element showing a 'breadbox' with text and other optional content.
 
 ### Example
 ```html
-    <breadbox-item text="Hello World">
-        <iron-icon icon="clear"></iron-icon>
-    </breadbox-item>
+<breadbox-item text="Hello World">
+  <iron-icon icon="clear"></iron-icon>
+</breadbox-item>
 ```
 
 ### Styling
@@ -24,3 +24,18 @@ Dependencies are installed using [Bower](http://bower.io/):
 
     npm install -g bower
     bower install
+
+### Testing
+
+Tests are run using [web-component-tester](https://github.com/Polymer/web-component-tester):
+
+    npm install -g web-component-tester
+    wct
+
+### Demonstration & Documentation
+
+Demonstration and documentation are viewed using [polyserve](https://github.com/PolymerLabs/polyserve):
+
+    npm install -g polyserve
+    polyserve
+
