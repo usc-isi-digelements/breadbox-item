@@ -1,7 +1,7 @@
 {
   "name": "breadbox-item",
   "description": "A Polymer Element showing a 'breadbox' with text and other optional content.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "authors": ["Next Century Corporation"],
   "license": "Apache-2.0",
   "keywords": [
