@@ -1,7 +1,7 @@
 {
   "name": "breadbox-item",
-  "description": "A Polymer Element showing a 'breadbox' with text and other optional content.",
-  "version": "1.0.3",
+  "description": "A Polymer Element showing a 'breadbox' (or 'badge') with text and other optional content.",
+  "version": "2.0.0",
   "authors": ["Next Century Corporation"],
   "license": "Apache-2.0",
   "keywords": [
@@ -9,18 +9,17 @@
     "polymer"
   ],
   "main": "breadbox-item.html",
-  "license": "http://polymer.github.io/LICENSE.txt",
   "homepage": "https://github.com/DigElements/breadbox-item/",
   "ignore": [
     "/.*",
     "/test/"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.7.0",
-    "paper-styles": "PolymerElements/paper-styles#^1.1.5"
+    "polymer": "Polymer/polymer#^2.0.2",
+    "paper-styles": "PolymerElements/paper-styles#^2.0.0"
   },
   "devDependencies": {
-    "iron-component-page": "PolymerElements/iron-component-page#^1.1.7",
-    "web-component-tester": "^5.0.0"
+    "iron-component-page": "PolymerElements/iron-component-page#^2.0.0",
+    "web-component-tester": "^6.0.0"
   }
 }

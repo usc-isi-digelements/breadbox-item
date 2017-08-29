@@ -18,7 +18,7 @@ limitations under the License.
 <link rel="import" href="../paper-styles/color.html">
 
 <!--
-A Polymer Element showing a 'breadbox' with text and other optional content.
+A Polymer Element showing a 'breadbox' (or 'badge') with text and other optional content.
 
 ### Example
 ```html
@@ -43,12 +43,13 @@ Custom property              | Description      | Default
   <template>
     <style>
       .item {
-        background: var(--breadbox-item-bg-color, --paper-blue-grey-200);
-        color: var(--breadbox-item-text-color, --paper-blue-grey-800);
+        background: var(--breadbox-item-bg-color, var(--paper-blue-grey-200));
+        color: var(--breadbox-item-text-color, var(--paper-blue-grey-800));
         display: inline-block;
         font-size: small;
         padding: 3px;
         margin: 3px;
+        border-radius: 2px;
       }
 
       .item > span {
@@ -66,7 +67,7 @@ Custom property              | Description      | Default
       <span title$="[[text]]">
         [[text]]
       </span>
-      <content></content>
+      <slot></slot>
     </span>
   </template>
 

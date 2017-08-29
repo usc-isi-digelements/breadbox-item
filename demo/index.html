@@ -19,18 +19,20 @@ limitations under the License.
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
   <title>breadbox-item Demo</title>
-  <script src="../../webcomponentsjs/webcomponents-lite.min.js"></script>
+  <script src="../../webcomponentsjs/webcomponents-loader.js"></script>
   <link rel="import" href="../breadbox-item.html">
 </head>
 
 <body unresolved>
-  <template is="dom-bind" id="demo">
-    <p>Text: Hello World</p>
-    <p>Content: Goodbye World</p>
+  <dom-bind id="demo">
+    <template is="dom-bind">
+      <p>Text: Hello World</p>
+      <p>Content: Goodbye World</p>
 
-    <breadbox-item text="Hello World">
-      <span style="display: inline-block; line-height: 18px; vertical-align: middle;">Goodbye World</span>
-    </breadbox-item>
-  </template>
+      <breadbox-item text="Hello World">
+        <span style="display: inline-block; line-height: 18px; vertical-align: middle;" title="Goodbye World">Goodbye World</span>
+      </breadbox-item>
+    </template>
+  </dom-bind>
 </body>
 </html>

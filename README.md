@@ -1,6 +1,6 @@
 # breadbox-item
 
-A Polymer Element showing a 'breadbox' with text and other optional content.
+A Polymer Element showing a 'breadbox' (or 'badge') with text and other optional content.
 
 ### Example
 ```html
