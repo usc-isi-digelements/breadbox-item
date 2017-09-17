@@ -26,11 +26,13 @@ limitations under the License.
 <body unresolved>
   <dom-bind id="demo">
     <template is="dom-bind">
+      <p>Icon: polymer</p>
+      <p>Icon Text: Icon Text</p>
       <p>Text: Hello World</p>
-      <p>Content: Goodbye World</p>
+      <p>Slot: Goodbye World</p>
 
-      <breadbox-item text="Hello World">
-        <span style="display: inline-block; line-height: 18px; vertical-align: middle;" title="Goodbye World">Goodbye World</span>
+      <breadbox-item icon="polymer" icon-text="Icon Text" text="Hello World">
+        <span title="Goodbye World">Goodbye World</span>
       </breadbox-item>
     </template>
   </dom-bind>

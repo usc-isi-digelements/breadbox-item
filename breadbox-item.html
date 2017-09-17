@@ -15,6 +15,9 @@ limitations under the License.
 -->
 
 <link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../iron-flex-layout/iron-flex-layout-classes.html">
+<link rel="import" href="../iron-icon/iron-icon.html">
+<link rel="import" href="../iron-icons/iron-icons.html">
 <link rel="import" href="../paper-styles/color.html">
 
 <!--
@@ -42,7 +45,13 @@ Custom property               | Description        | Default
 
 <dom-module id="breadbox-item">
   <template>
+    <style include="iron-flex iron-flex-alignment iron-flex-factors"></style>
+
     <style>
+      :host {
+        display: block;
+      }
+
       .item {
         background: var(--breadbox-item-bg-color, var(--paper-grey-400));
         color: var(--breadbox-item-text-color, var(--paper-grey-900));
@@ -54,9 +63,15 @@ Custom property               | Description        | Default
         @apply --breadbox-item-style-mixin;
       }
 
-      .item > span {
-        display: inline-block;
+      iron-icon {
+        margin-right: 5px;
+        --iron-icon-height: 18px;
+        --iron-icon-width: 18px;
+      }
+
+      .text {
         line-height: 18px;
+        margin-right: 5px;
         max-width: 240px;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -65,12 +80,17 @@ Custom property               | Description        | Default
       }
     </style>
 
-    <span class="item">
-      <span title$="[[text]]">
-        [[text]]
-      </span>
-      <slot></slot>
-    </span>
+    <div class="item">
+      <div class="layout horizontal center">
+        <template is="dom-if" if="[[icon]]">
+          <iron-icon icon$="[[icon]]" title$="[[iconText]]"></iron-icon>
+        </template>
+        <div class="text" title$="[[text]]">
+          [[text]]
+        </div>
+        <slot></slot>
+      </div>
+    </div>
   </template>
 
   <script>
@@ -78,6 +98,29 @@ Custom property               | Description        | Default
       is: 'breadbox-item',
 
       properties: {
+        /**
+         * (Optional)
+         *
+         * The icon of the breadbox item.
+         *
+         * @type {String}
+         */
+        icon: {
+          type: String
+        },
+
+        /**
+         * (Optional)
+         *
+         * The icon text of the breadbox item.
+         *
+         * @type {String}
+         */
+        iconText: {
+          type: String,
+          value: ''
+        },
+
         /**
          * (Required)
          *
