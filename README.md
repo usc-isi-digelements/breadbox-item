@@ -13,11 +13,12 @@ A Polymer Element showing a 'breadbox' (or 'badge') with text and other optional
 
 `<breadbox-item>` provides the following custom properties and mixins for styling:
 
-Custom property               | Description        | Default
-------------------------------|--------------------|----------------------
-`--breadbox-item-bg-color`    | Background color   | --paper-grey-400
-`--breadbox-item-style-mixin` | Custom style mixin | none
-`--breadbox-item-text-color`  | Text color         | --paper-grey-900
+Custom property                    | Description        | Default
+-----------------------------------|--------------------|----------------------
+`--breadbox-item-bg-color`         | Background color   | --paper-grey-400
+`--breadbox-item-icon-style-mixin` | Icon style mixin   | none
+`--breadbox-item-style-mixin`      | Custom style mixin | none
+`--breadbox-item-text-color`       | Text color         | --paper-grey-900
 
 ### Dependencies
 
