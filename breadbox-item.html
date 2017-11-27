@@ -54,12 +54,11 @@ Custom property                    | Description        | Default
       }
 
       .item {
-        background: var(--breadbox-item-bg-color, var(--paper-grey-400));
+        background-color: var(--breadbox-item-bg-color, var(--paper-grey-400));
         color: var(--breadbox-item-text-color, var(--paper-grey-900));
-        display: inline-block;
-        font-size: small;
-        padding: 3px;
-        margin: 3px;
+        font-size: 14px;
+        line-height: 16px;
+        padding: 4px;
         border-radius: 2px;
         @apply --breadbox-item-style-mixin;
       }
@@ -72,7 +71,6 @@ Custom property                    | Description        | Default
       }
 
       .text {
-        line-height: 16px;
         max-width: 220px;
         overflow: hidden;
         text-overflow: ellipsis;
