@@ -36,7 +36,7 @@ A Polymer Element showing a 'breadbox' (or 'badge') with text and other optional
 
 Custom property                    | Description        | Default
 -----------------------------------|--------------------|----------------------
-`--breadbox-item-bg-color`         | Background color   | --paper-grey-400
+`--breadbox-item-bg-color`         | Background color   | --paper-grey-300
 `--breadbox-item-icon-style-mixin` | Icon style mixin   | none
 `--breadbox-item-style-mixin`      | Custom style mixin | none
 `--breadbox-item-text-color`       | Text color         | --paper-grey-900
@@ -54,19 +54,19 @@ Custom property                    | Description        | Default
       }
 
       .item {
-        background-color: var(--breadbox-item-bg-color, var(--paper-grey-400));
+        background-color: var(--breadbox-item-bg-color, var(--paper-grey-300));
         color: var(--breadbox-item-text-color, var(--paper-grey-900));
         font-size: 14px;
-        line-height: 16px;
-        padding: 4px;
+        line-height: 15px;
+        padding: 5px;
         border-radius: 2px;
         @apply --breadbox-item-style-mixin;
       }
 
       iron-icon {
         margin-right: 5px;
-        --iron-icon-height: 16px;
-        --iron-icon-width: 16px;
+        --iron-icon-height: 15px;
+        --iron-icon-width: 15px;
         @apply --breadbox-item-icon-style-mixin;
       }
 

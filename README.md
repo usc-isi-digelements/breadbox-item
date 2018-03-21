@@ -15,7 +15,7 @@ A Polymer Element showing a 'breadbox' (or 'badge') with text and other optional
 
 Custom property                    | Description        | Default
 -----------------------------------|--------------------|----------------------
-`--breadbox-item-bg-color`         | Background color   | --paper-grey-400
+`--breadbox-item-bg-color`         | Background color   | --paper-grey-300
 `--breadbox-item-icon-style-mixin` | Icon style mixin   | none
 `--breadbox-item-style-mixin`      | Custom style mixin | none
 `--breadbox-item-text-color`       | Text color         | --paper-grey-900
