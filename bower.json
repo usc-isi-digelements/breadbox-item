@@ -9,7 +9,7 @@
     "polymer"
   ],
   "main": "breadbox-item.html",
-  "homepage": "https://github.com/DigElements/breadbox-item/",
+  "homepage": "https://github.com/usc-isi-digelements/breadbox-item/",
   "ignore": [
     "/.*",
     "/test/"
